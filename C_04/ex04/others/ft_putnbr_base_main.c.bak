@@ -1,0 +1,33 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_base_main.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pvaladar <pvaladar@student.42lisboa>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/25 11:26:18 by pvaladar          #+#    #+#             */
+/*   Updated: 2022/01/26 15:02:06 by pvaladar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <limits.h>
+#include <stdio.h>
+
+void	ft_putnbr_base(int nbr, char *base);
+
+int	main(void)
+{
+	int		n;
+	char	*base;
+
+	n = INT_MIN;
+	base = "10";
+	ft_putnbr_base(n, base);
+	//
+	puts("");
+	//
+	n = 100;
+	base = "0123456789abcdef";
+	ft_putnbr_base(n, base);
+	return (0);
+}

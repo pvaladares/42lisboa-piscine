@@ -1,0 +1,4 @@
+Bonus: use argc and argv in the main function
+Bug: the header would not be printed for case 2 !!!!!!
+
+5%
